@@ -22,7 +22,8 @@ b)  sum = 0
         j *= 2
         sum += 1
 ```
-O(N*m)         Space O(1)
+O(N*nlogn)         Space O(1)
+
 
 ```
 c)  def bunnyEars(bunnies):
