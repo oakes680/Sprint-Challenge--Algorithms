@@ -11,7 +11,7 @@ a)  a = 0
       a = a + n * n
 ```
 
-O(n^3)         Space O(1)
+O(n)         Space O(1)
 
 
 ```
@@ -22,7 +22,7 @@ b)  sum = 0
         j *= 2
         sum += 1
 ```
-O(N*m)        Space O(1)
+O(N*m)         Space O(1)
 
 ```
 c)  def bunnyEars(bunnies):
@@ -41,3 +41,10 @@ Suppose that you have an n-story building and plenty of eggs. Suppose also that 
 Write out your proposed algorithm in plain English or pseudocode AND give the runtime complexity of your solution.
 
 Binary Search.    cut the floors in half each time   O(logn)   
+
+We will start on the ground floor.   Find the middle floor.
+Then drop the egg  - >  there are two possibilities the egg breaks or the egg doesn't break.
+1.) if the egg breaks -   We will move from the middle floor down to a new middle floor which is the middle between the ground and the current floor you are on.  
+2.) If the egg doesn't break we will move to the middle floor between the current floor you are on and the top floor.
+repeat until you find the highest floor the egg doesn't break on.
+
